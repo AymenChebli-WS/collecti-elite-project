@@ -1,0 +1,50 @@
+.profile-image {
+    width: 30vh; /* Adjust the width as needed */
+    margin-bottom: 3vh;
+  }
+
+.tile-container {
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* height: 100%; */
+}
+
+.info-container {
+    display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  height: 100%;
+}
+
+.user-name {
+    font-family: 'Roboto', 'Helvetica Neue', sans-serif;
+    font-weight: bold; /* Thin */
+    font-size: xx-large;
+}
+
+.subtext-thin {
+    font-family: 'Roboto', 'Helvetica Neue', sans-serif;
+    font-weight: 100; /* Thin */
+    font-size: x-large;
+}
+
+.subtext-info-title {
+    font-family: 'Roboto', 'Helvetica Neue', sans-serif;
+    font-weight: bold; /* Thin */
+    font-size: x-large;
+}
+
+.subtext-info-text {
+    font-family: 'Roboto', 'Helvetica Neue', sans-serif;
+    font-weight: 100; /* Thin */
+    font-size: x-large;
+}
+
+.info-item {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 0;
+}

@@ -1,0 +1,11 @@
+<div class="mainc-container">
+    <div class="title-container">
+      <span class="mainc-title">	<mat-icon>receipt</mat-icon>  {{ parseSurvey(survey.schema)?.title }}</span><br>
+      <span class="mainc-subtitle">{{ parseSurvey(survey.schema)?.description }}</span>
+    </div>
+    <div class="export-button">
+        <button mat-stroked-button color="primary" (click)="exportCsv()"><mat-icon>get_app</mat-icon>Export data</button>
+    </div>
+    
+    <div id="surveyVizPanel"></div>
+  </div>

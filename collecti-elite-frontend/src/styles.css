@@ -1,0 +1,36 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.center-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Set the container height to the full viewport height */
+}
+
+.mainc-container {
+    border-radius: 10px; /* Adjust the radius value as needed */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adjust the shadow values as needed */
+    padding: 20px; /* Adjust the padding as needed */
+    background-color: #ffffff; /* Adjust the background color as needed */
+    margin: 20px;
+  }
+
+.title-container {
+  margin-bottom: 10px;
+}
+
+  .mainc-title {
+    font-family: 'Roboto', 'Helvetica Neue', sans-serif;
+    font-weight: 100; /* Thin */
+    font-size: xx-large;
+  }
+
+  .mainc-subtitle {
+    font-family: 'Roboto', 'Helvetica Neue', sans-serif;
+    font-weight: 100; /* Thin */
+    font-size: medium;
+  }

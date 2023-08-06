@@ -1,0 +1,72 @@
+<div class="mainc-container" *ngIf="user">
+    <!-- Your content goes here -->
+    <span class="mainc-title"><mat-icon>assignment_ind</mat-icon>  User profile</span><br>
+    <span class="mainc-subtitle">Contains a variety of information about the user</span>
+
+    <mat-grid-list cols="2" rowHeight="700px">
+        <mat-grid-tile  colspan="1">
+          <div class="tile-container">
+            <img class="profile-image" src="assets/images/UserProfile.png" alt="profile"><br>
+            <span class="user-name">{{ user.prenom }} {{ user.nom }}</span>
+            <span class="subtext-thin">Role: Regular {{ user.role }}</span>
+            <mat-card class="example-card">
+                <mat-card-header>
+                  <mat-card-subtitle>User bio</mat-card-subtitle>
+                  <mat-card-title>About user</mat-card-title>
+                </mat-card-header>
+                <mat-card-content>
+                  <p>The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan. A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally bred for hunting.</p>
+                  <mat-divider></mat-divider>
+                </mat-card-content>
+                <mat-card-actions>
+                  <button mat-button>Edit</button>
+                  <button mat-button>Save</button>
+                </mat-card-actions>
+                <mat-card-footer>
+                 
+                </mat-card-footer>
+              </mat-card>
+          </div>
+        </mat-grid-tile>
+        
+        <mat-grid-tile colspan="1">
+          <div class="info-container">
+          <mat-tab-group mat-stretch-tabs="false" mat-align-tabs="start">
+            <mat-tab label="User Info">
+                  <mat-list>
+                      <mat-list-item class="info-item">
+                          <span class="subtext-info-title">Name</span><br>
+                          <span class="subtext-info-text">{{ user.prenom }} {{ user.nom }}</span>
+                      </mat-list-item>
+                      <mat-divider></mat-divider>
+                      <mat-list-item class="info-item">
+                          <span class="subtext-info-title">Role</span><br>
+                          <span class="subtext-info-text">Regular {{ user.role }}</span>
+                      </mat-list-item>
+                      <mat-divider></mat-divider>
+                      <mat-list-item class="info-item">
+                          <span class="subtext-info-title">E-mail</span><br>
+                          <span class="subtext-info-text">{{ user.email }}</span>
+                      </mat-list-item>
+                      <mat-divider></mat-divider>
+                      <mat-list-item class="info-item">
+                          <span class="subtext-info-title">Address</span><br>
+                          <span class="subtext-info-text">{{ user.address }}</span>
+                      </mat-list-item>
+                      <mat-divider></mat-divider>
+                      <mat-list-item class="info-item">
+                          <span class="subtext-info-title">Birth date</span><br>
+                          <span class="subtext-info-text">{{ birthDate }}</span>
+                      </mat-list-item>
+                    </mat-list>
+                  </mat-tab>
+                  <mat-tab label="Surveys">
+                    <app-survey-by-user></app-survey-by-user>
+                  </mat-tab>
+                  <mat-tab label="Participations"> Content 3 </mat-tab>
+                </mat-tab-group>
+              </div>
+        </mat-grid-tile>
+      </mat-grid-list>
+    
+</div>

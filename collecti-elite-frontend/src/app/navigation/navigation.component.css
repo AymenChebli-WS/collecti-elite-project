@@ -1,0 +1,8 @@
+.logo-brand {
+    width: 15%;
+    margin-top: 0.5em;
+}
+
+.example-spacer {
+    flex: 1 1 auto;
+  }
